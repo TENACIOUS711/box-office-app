@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { searchForShows, searchForActors } from './TvMaze';
-import SearchForm from './SearchForm';
-import ActorGrid from './actors/ActorGrid';
-import ShowGrid from './shows/ShowGrid';
+import { searchForShows, searchForActors } from '../TvMaze';
+import SearchForm from '../SearchForm';
+import ActorGrid from '../actors/ActorGrid';
+import ShowGrid from '../shows/ShowGrid';
 
 const Home = () => {
   const [apiData, SetApiData] = useState(null);
