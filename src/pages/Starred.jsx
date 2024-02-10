@@ -1,5 +1,8 @@
+import { useStarredShows } from '../shows/useStarredShows';
+
 const Starred = () => {
-  return <div>starred message</div>;
+  const [starredShows] = useStarredShows();
+  return <div>starred {starredShows.length} shows</div>;
 };
 
 export default Starred;
