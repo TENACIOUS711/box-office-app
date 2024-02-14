@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://TENACIOUS711.github.io/box-office-app",
   "dependencies": {
     "@tanstack/react-query": "^5.18.1",
     "cors": "^2.8.5",
@@ -9,6 +10,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -34,7 +36,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write src/**/*.{js,jsx}"
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
